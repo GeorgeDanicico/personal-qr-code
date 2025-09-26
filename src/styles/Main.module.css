@@ -8,6 +8,7 @@
   padding: 96px 32px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   background:
     radial-gradient(circle at top left, rgba(167, 139, 250, 0.25), transparent 45%),
