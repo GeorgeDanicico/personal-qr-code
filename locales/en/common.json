@@ -1,0 +1,75 @@
+{
+  "badge": "vCard QR Generator",
+  "title": "Share who you are with a single scan.",
+  "description": "Fill in your professional details and we’ll prepare everything you need to generate your personal QR code. Customize your contact card once and share it everywhere.",
+  "languageLabel": "Language",
+  "languageOptions": {
+    "en": "English",
+    "ro": "Română",
+    "de": "Deutsch",
+    "es": "Español"
+  },
+  "sections": {
+    "basic": {
+      "heading": "Basic information",
+      "subheading": "Introduce yourself so we can populate your vCard."
+    },
+    "contact": {
+      "heading": "Contact channels",
+      "subheading": "Keep your leads close by sharing the best ways to reach you."
+    },
+    "location": {
+      "heading": "Location",
+      "subheading": "Optional, but handy if people want to drop by your office."
+    }
+  },
+  "labels": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "jobTitle": "Job title",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone",
+    "website": "Website",
+    "street": "Street",
+    "city": "City",
+    "state": "State / Region",
+    "postalCode": "Postal code",
+    "country": "Country"
+  },
+  "placeholders": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "jobTitle": "Lead Product Designer",
+    "company": "Studio Meridian",
+    "email": "jane@meridian.studio",
+    "phone": "+1 (555) 123-4567",
+    "website": "https://meridian.studio",
+    "street": "742 Evergreen Terrace",
+    "city": "Springfield",
+    "state": "Oregon",
+    "postalCode": "97403",
+    "country": "United States"
+  },
+  "buttons": {
+    "submit": "Generate QR Code",
+    "reset": "Reset form",
+    "download": "Download PNG"
+  },
+  "modal": {
+    "title": "Your vCard QR code",
+    "subtitle": "Scan or download to share your contact card instantly."
+  },
+  "messages": {
+    "helper": "We’ll enable advanced options once the generator is ready.",
+    "errors": {
+      "generationFailed": "Unable to generate your QR code. Please try again."
+    }
+  },
+  "validation": {
+    "firstNameRequired": "First name is required",
+    "phoneRequired": "Phone number is required",
+    "emailInvalid": "Enter a valid email address",
+    "websiteInvalid": "Include the full URL, e.g. https://example.com"
+  }
+}

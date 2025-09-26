@@ -1,0 +1,77 @@
+{
+  "badge": "Generator QR vCard",
+  "title": "Spune cine ești printr-o singură scanare.",
+  "description": "Completează-ți datele profesionale și noi pregătim tot ce ai nevoie pentru a genera codul tău QR personal. Configurează-ți cartea de vizită o singură dată și distribuie-o oriunde.",
+  "languageLabel": "Limba",
+  "languageOptions": {
+    "en": "English",
+    "ro": "Română",
+    "de": "Deutsch",
+    "es": "Español"
+  },
+  "sections": {
+    "basic": {
+      "heading": "Informații de bază",
+      "subheading": "Prezintă-te pentru a-ți completa vCard-ul."
+    },
+    "contact": {
+      "heading": "Canale de contact",
+      "subheading": "Păstrează legătura oferind cele mai bune modalități de a fi contactat."
+    },
+    "location": {
+      "heading": "Locație",
+      "subheading": "Opțional, dar util dacă cineva dorește să îți viziteze biroul."
+    }
+  },
+  "labels": {
+    "firstName": "Prenume",
+    "lastName": "Nume",
+    "jobTitle": "Funcție",
+    "company": "Companie",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "website": "Site web",
+    "street": "Stradă",
+    "city": "Oraș",
+    "state": "Județ / Regiune",
+    "postalCode": "Cod poștal",
+    "country": "Țară"
+  },
+  "placeholders": {
+    "firstName": "Ana",
+    "lastName": "Popescu",
+    "jobTitle": "Lead Product Designer",
+    "company": "Studio Meridian",
+    "email": "jane@meridian.studio",
+    "phone": "+40 723 123 456",
+    "website": "https://meridian.studio",
+    "street": "Strada Exemplu 12",
+    "city": "București",
+    "state": "Ilfov",
+    "postalCode": "021803",
+    "country": "România"
+  },
+  "buttons": {
+    "submit": "Generează cod QR",
+    "reset": "Resetează formularul",
+    "download": "Descarcă PNG"
+  },
+  "modal": {
+    "title": "Codul tău QR vCard",
+    "subtitle": "Scanează sau descarcă pentru a-ți partaja instant cartea de vizită.",
+    "close": "Închide previzualizarea codului QR"
+  },
+  "messages": {
+    "helper": "Vom activa opțiuni avansate imediat ce generatorul este gata.",
+    "errors": {
+      "generationFailed": "Nu am reușit să generăm codul tău QR. Încearcă din nou."
+    }
+  },
+  "validation": {
+    "firstNameRequired": "Prenumele este obligatoriu",
+    "phoneRequired": "Numărul de telefon este obligatoriu",
+    "emailInvalid": "Introdu o adresă de e-mail validă",
+    "websiteInvalid": "Include adresa completă, ex. https://exemplu.com",
+    "generic": "Valoare invalidă"
+  }
+}

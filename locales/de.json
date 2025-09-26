@@ -1,0 +1,77 @@
+{
+  "badge": "vCard-QR-Generator",
+  "title": "Teile, wer du bist, mit einem einzigen Scan.",
+  "description": "Fülle deine beruflichen Daten aus und wir bereiten alles für deinen persönlichen QR-Code vor. Passe deine Kontaktkarte einmal an und teile sie überall.",
+  "languageLabel": "Sprache",
+  "languageOptions": {
+    "en": "English",
+    "ro": "Română",
+    "de": "Deutsch",
+    "es": "Español"
+  },
+  "sections": {
+    "basic": {
+      "heading": "Basisinformationen",
+      "subheading": "Stell dich vor, damit wir deine vCard ausfüllen können."
+    },
+    "contact": {
+      "heading": "Kontaktkanäle",
+      "subheading": "Teile die besten Wege, wie man dich erreichen kann."
+    },
+    "location": {
+      "heading": "Standort",
+      "subheading": "Optional, aber hilfreich, wenn jemand dein Büro besuchen möchte."
+    }
+  },
+  "labels": {
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "jobTitle": "Berufsbezeichnung",
+    "company": "Unternehmen",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "website": "Webseite",
+    "street": "Straße",
+    "city": "Stadt",
+    "state": "Bundesland / Region",
+    "postalCode": "Postleitzahl",
+    "country": "Land"
+  },
+  "placeholders": {
+    "firstName": "Janine",
+    "lastName": "Beispiel",
+    "jobTitle": "Lead Product Designer",
+    "company": "Studio Meridian",
+    "email": "janine@meridian.studio",
+    "phone": "+49 1512 3456789",
+    "website": "https://meridian.studio",
+    "street": "Beispielstraße 5",
+    "city": "Berlin",
+    "state": "Berlin",
+    "postalCode": "10115",
+    "country": "Deutschland"
+  },
+  "buttons": {
+    "submit": "QR-Code erzeugen",
+    "reset": "Formular zurücksetzen",
+    "download": "PNG herunterladen"
+  },
+  "modal": {
+    "title": "Dein vCard-QR-Code",
+    "subtitle": "Scanne oder lade herunter, um deine Kontaktdaten sofort zu teilen.",
+    "close": "QR-Code-Vorschau schließen"
+  },
+  "messages": {
+    "helper": "Wir schalten erweiterte Optionen frei, sobald der Generator bereit ist.",
+    "errors": {
+      "generationFailed": "Dein QR-Code konnte nicht erstellt werden. Bitte versuche es erneut."
+    }
+  },
+  "validation": {
+    "firstNameRequired": "Der Vorname ist erforderlich",
+    "phoneRequired": "Die Telefonnummer ist erforderlich",
+    "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein",
+    "websiteInvalid": "Bitte gib die vollständige URL an, z. B. https://beispiel.de",
+    "generic": "Ungültiger Wert"
+  }
+}

@@ -1,0 +1,319 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow:
+    0 25px 50px -12px rgba(15, 23, 42, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.groupHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: rgba(15, 23, 42, 0.84);
+}
+
+.groupHeader h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.groupHeader p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(15, 23, 42, 0.6);
+}
+
+.fieldsGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.submitButton {
+  padding: 14px 26px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 0.92;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.submitButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.resetButton {
+  padding: 12px 22px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 14px;
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  background: rgba(37, 99, 235, 0.1);
+  color: #1d4ed8;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+  backdrop-filter: blur(6px);
+}
+
+.resetButton:focus-visible {
+  outline: 2px solid rgba(37, 99, 235, 0.65);
+  outline-offset: 3px;
+}
+
+.helperText {
+  font-size: 0.85rem;
+  color: rgba(15, 23, 42, 0.6);
+}
+
+.helperTextError {
+  color: var(--form-error, #b91c1c);
+  font-weight: 500;
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  padding: 24px;
+}
+
+.modal {
+  position: relative;
+  width: min(420px, 100%);
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 24px;
+  padding: 32px 28px;
+  box-shadow: 0 30px 60px -20px rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.modalHeader p {
+  margin: 4px 0 0;
+  color: rgba(15, 23, 42, 0.65);
+  font-size: 0.95rem;
+}
+
+.modalBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(241, 245, 249, 0.75);
+  border: 1px dashed rgba(148, 163, 184, 0.4);
+}
+
+.qrImage {
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.downloadButton {
+  padding: 12px 20px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #10b981, #14b8a6);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 12px 24px -12px rgba(16, 185, 129, 0.6);
+}
+
+.downloadButton:focus-visible {
+  outline: 2px solid rgba(45, 212, 191, 0.65);
+  outline-offset: 3px;
+}
+
+.modalClose {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(15, 23, 42, 0.08);
+  color: rgba(15, 23, 42, 0.6);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.modalClose:focus-visible {
+  outline: 2px solid rgba(37, 99, 235, 0.65);
+  outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .form {
+    background: rgba(15, 23, 42, 0.78);
+    border-color: rgba(148, 163, 184, 0.25);
+    box-shadow:
+      0 24px 55px -15px rgba(14, 21, 37, 0.9),
+      inset 0 1px 0 rgba(148, 163, 184, 0.35);
+  }
+
+  .groupHeader {
+    color: rgba(226, 232, 240, 0.9);
+  }
+
+  .groupHeader p {
+    color: rgba(148, 163, 184, 0.75);
+  }
+
+  .submitButton {
+    opacity: 0.45;
+  }
+
+  .helperText {
+    color: rgba(148, 163, 184, 0.75);
+  }
+
+  .resetButton {
+    border-color: rgba(96, 165, 250, 0.4);
+    background: rgba(37, 99, 235, 0.22);
+    color: rgba(219, 234, 254, 0.95);
+  }
+
+  .resetButton:focus-visible {
+    outline-color: rgba(147, 197, 253, 0.8);
+  }
+
+  .helperTextError {
+    color: rgba(248, 113, 113, 0.85);
+  }
+
+  .modal {
+    background: rgba(15, 23, 42, 0.92);
+    border-color: rgba(148, 163, 184, 0.3);
+    box-shadow: 0 36px 70px -24px rgba(2, 6, 23, 0.85);
+  }
+
+  .modalHeader h2 {
+    color: #e2e8f0;
+  }
+
+  .modalHeader p {
+    color: rgba(226, 232, 240, 0.7);
+  }
+
+  .modalBody {
+    background: rgba(30, 41, 59, 0.65);
+    border-color: rgba(148, 163, 184, 0.45);
+  }
+
+  .modalClose {
+    background: rgba(148, 163, 184, 0.16);
+    color: rgba(226, 232, 240, 0.75);
+  }
+
+  .downloadButton {
+    background: linear-gradient(135deg, #22d3ee, #2dd4bf);
+    box-shadow: 0 14px 28px -16px rgba(45, 212, 191, 0.65);
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    padding: 28px 24px;
+    gap: 32px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .submitButton:not(:disabled):hover {
+    opacity: 1;
+    transform: translateY(-1px);
+  }
+
+  .resetButton:hover {
+    background: rgba(37, 99, 235, 0.18);
+    border-color: rgba(37, 99, 235, 0.5);
+    transform: translateY(-1px);
+  }
+
+  .modalClose:hover {
+    background: rgba(37, 99, 235, 0.2);
+    color: rgba(29, 78, 216, 0.95);
+  }
+
+  .downloadButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 28px -14px rgba(16, 185, 129, 0.6);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-color-scheme: dark) {
+  .resetButton:hover {
+    background: rgba(59, 130, 246, 0.32);
+    border-color: rgba(147, 197, 253, 0.6);
+  }
+
+  .modalClose:hover {
+    background: rgba(96, 165, 250, 0.25);
+    color: rgba(219, 234, 254, 0.95);
+  }
+
+  .downloadButton:hover {
+    box-shadow: 0 18px 34px -16px rgba(45, 212, 191, 0.65);
+  }
+}

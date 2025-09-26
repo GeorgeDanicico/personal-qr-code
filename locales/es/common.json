@@ -1,0 +1,75 @@
+{
+  "badge": "Generador de QR vCard",
+  "title": "Comparte quién eres con un solo escaneo.",
+  "description": "Completa tus datos profesionales y prepararemos todo lo necesario para generar tu código QR personal. Personaliza tu tarjeta de contacto una vez y compártela en todas partes.",
+  "languageLabel": "Idioma",
+  "languageOptions": {
+    "en": "English",
+    "ro": "Română",
+    "de": "Deutsch",
+    "es": "Español"
+  },
+  "sections": {
+    "basic": {
+      "heading": "Información básica",
+      "subheading": "Preséntate para que podamos completar tu vCard."
+    },
+    "contact": {
+      "heading": "Canales de contacto",
+      "subheading": "Comparte las mejores formas de ponerte en contacto."
+    },
+    "location": {
+      "heading": "Ubicación",
+      "subheading": "Opcional, pero útil si alguien quiere visitar tu oficina."
+    }
+  },
+  "labels": {
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "jobTitle": "Cargo",
+    "company": "Empresa",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "website": "Sitio web",
+    "street": "Calle",
+    "city": "Ciudad",
+    "state": "Estado / Región",
+    "postalCode": "Código postal",
+    "country": "País"
+  },
+  "placeholders": {
+    "firstName": "Juana",
+    "lastName": "Ejemplo",
+    "jobTitle": "Lead Product Designer",
+    "company": "Studio Meridian",
+    "email": "juana@meridian.studio",
+    "phone": "+52 55 1234 5678",
+    "website": "https://meridian.studio",
+    "street": "Calle Ficticia 123",
+    "city": "Ciudad de México",
+    "state": "CDMX",
+    "postalCode": "01000",
+    "country": "México"
+  },
+  "buttons": {
+    "submit": "Generar código QR",
+    "reset": "Restablecer formulario",
+    "download": "Descargar PNG"
+  },
+  "modal": {
+    "title": "Tu código QR vCard",
+    "subtitle": "Escanea o descarga para compartir tu tarjeta de contacto al instante."
+  },
+  "messages": {
+    "helper": "Activaremos las opciones avanzadas en cuanto el generador esté listo.",
+    "errors": {
+      "generationFailed": "No se pudo generar tu código QR. Vuelve a intentarlo."
+    }
+  },
+  "validation": {
+    "firstNameRequired": "El nombre es obligatorio",
+    "phoneRequired": "El número de teléfono es obligatorio",
+    "emailInvalid": "Introduce una dirección de correo válida",
+    "websiteInvalid": "Incluye la URL completa, por ejemplo https://ejemplo.com"
+  }
+}
