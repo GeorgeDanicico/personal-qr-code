@@ -407,9 +407,6 @@ const VCardForm = ({ translation, translate }: Props) => {
           <button type="button" onClick={resetFormData} className={formStyles.resetButton}>
             {translation.buttons.reset}
           </button>
-          <span className={`${formStyles.helperText} ${qrError ? formStyles.helperTextError : ""}`}>
-            {helperMessage}
-          </span>
         </div>
       </form>
 
