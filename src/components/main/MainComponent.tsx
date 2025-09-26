@@ -74,6 +74,10 @@ const MainComponent = () => {
 
         <VCardForm translation={translation} translate={translate} />
       </main>
+
+      <footer className={styles.footer}>
+        © {new Date().getFullYear()} George Danicico. All rights reserved.
+      </footer>
     </div>
   );
 };
