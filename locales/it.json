@@ -1,0 +1,77 @@
+{
+  "badge": "Generatore QR vCard",
+  "title": "Condividi chi sei con una singola scansione.",
+  "description": "Compila i tuoi dettagli professionali e prepareremo tutto il necessario per generare il tuo codice QR personale. Personalizza la tua scheda contatti una volta sola e condividila ovunque.",
+  "languageLabel": "Lingua",
+  "languageOptions": {
+    "en": "Inglese",
+    "ro": "Rumeno",
+    "de": "Tedesco",
+    "es": "Spagnolo"
+  },
+  "sections": {
+    "basic": {
+      "heading": "Informazioni di base",
+      "subheading": "Presentati così possiamo compilare la tua vCard."
+    },
+    "contact": {
+      "heading": "Canali di contatto",
+      "subheading": "Mantieni i tuoi contatti vicini condividendo i modi migliori per raggiungerti."
+    },
+    "location": {
+      "heading": "Posizione",
+      "subheading": "Facoltativo, ma utile se le persone vogliono passare a trovarti in ufficio."
+    }
+  },
+  "labels": {
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "jobTitle": "Ruolo professionale",
+    "company": "Azienda",
+    "email": "Email",
+    "phone": "Telefono",
+    "website": "Sito web",
+    "street": "Via",
+    "city": "Città",
+    "state": "Stato / Regione",
+    "postalCode": "CAP",
+    "country": "Paese"
+  },
+  "placeholders": {
+    "firstName": "Mario",
+    "lastName": "Rossi",
+    "jobTitle": "Lead Designer di Prodotto",
+    "company": "Studio Meridian",
+    "email": "mario@meridian.studio",
+    "phone": "+39 123 456 789",
+    "website": "https://meridian.studio",
+    "street": "Via delle Rose 10",
+    "city": "Roma",
+    "state": "Lazio",
+    "postalCode": "00100",
+    "country": "Italia"
+  },
+  "buttons": {
+    "submit": "Genera codice QR",
+    "reset": "Resetta modulo",
+    "download": "Scarica PNG"
+  },
+  "modal": {
+    "title": "Il tuo codice QR vCard",
+    "subtitle": "Scansiona o scarica per condividere istantaneamente la tua scheda contatti.",
+    "close": "Chiudi anteprima codice QR"
+  },
+  "messages": {
+    "helper": "Abiliteremo opzioni avanzate una volta che il generatore sarà pronto.",
+    "errors": {
+      "generationFailed": "Impossibile generare il codice QR. Riprova."
+    }
+  },
+  "validation": {
+    "firstNameRequired": "Il nome è obbligatorio",
+    "phoneRequired": "Il numero di telefono è obbligatorio",
+    "emailInvalid": "Inserisci un indirizzo email valido",
+    "websiteInvalid": "Includi l'URL completo, ad esempio https://esempio.com",
+    "generic": "Valore non valido"
+  }
+}
